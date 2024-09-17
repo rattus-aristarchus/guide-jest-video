@@ -21,6 +21,7 @@ describe(`webdriver`, () => {
             
         await driver.getSession().then(function(session) {
             sessionId = session.id_;
+            console.log("Session ID is " + sessionId);
         });
     }, 30000);
 
